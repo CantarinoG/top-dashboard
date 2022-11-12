@@ -7,18 +7,18 @@ sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 body {
     display: flex;
     height: 100vh;
+    font-family: $poppins;
     aside {
         flex: 15;
         padding: 30px;
         background-color: $dark;
         color: $txtLight;
-        font-family: $poppins;
         font-size: large;
         nav {
             ul {
@@ -44,19 +44,74 @@ body {
         header {
             padding: 20px;
             height: 180px;
+            border-bottom: 1px solid #dbdbdb;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            img {
+                width: 24px;
+                height: 24px;
+            }
+            img.profile {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
             .upper-header {
                 display: flex;
                 gap: 30px;
                 .search-container {
-                    flex: 6;
+                    flex: 10;
+                    display: flex;
+                    align-items: center;
+                    input[type='search'] {
+                        width: 100%;
+                        background-color: #dbdbdb;
+                        border-radius: 20px;
+                        border: none;
+                        padding: 6px;
+                        margin-left: 5px;
+                    }
                 }
                 .user-info {
-                    flex: 4;
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+                    gap: 10px;
+                    margin-right: 20px;
                 }
             }
             .lower-header {
                 display: flex;
-                gap: 50%;
+                justify-content: space-between;
+                gap: 30px;
+                padding-left: 36px;
+                padding-right: 36px;
+                .user-container {
+                    display: flex;
+                    gap: 12px;
+                    img.profile {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                    }
+                    span.bigger {
+                        font-size: 18px;
+                    }
+                }
+                .btn-group {
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+                    button {
+                        color: $txtLight;
+                        background-color: $dark;
+                        border: none;
+                        border-radius: 20px;
+                        padding: 8px;
+                        font-weight: bold;
+                    }
+                }
             }
         }
         .main-content {
