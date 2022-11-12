@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,10 +13,26 @@ body {
 body aside {
   flex: 15;
   padding: 30px;
+  background-color: #0D1321;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: large;
 }
 body aside nav ul {
   list-style: none;
   margin-top: 30px;
+}
+body aside nav ul li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+body aside nav span.brand {
+  font-size: x-large;
+  display: block;
+}
+body aside nav span.brand img {
+  height: 37px;
+  width: 37px;
 }
 body .dashboard {
   flex: 85;
@@ -61,8 +78,6 @@ body .dashboard .main-content aside {
 }
 
 img {
+  height: 18px;
   display: inline;
-  height: 50px;
-  width: 50px;
-  background-color: aqua;
 }/*# sourceMappingURL=main.css.map */
