@@ -44,6 +44,13 @@ body .dashboard .main-content {
 }
 body .dashboard .main-content main {
   flex: 3;
+  overflow-y: auto;
+}
+body .dashboard .main-content main .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px;
+  grid-auto-rows: 200px;
 }
 body .dashboard .main-content aside {
   flex: 1;

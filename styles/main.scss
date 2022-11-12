@@ -43,6 +43,13 @@
                         height: calc(100vh - 180px);
                         main {
                             flex: 3;
+                            overflow-y: auto;
+                            .grid-container {
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                grid-template-rows: 200px;
+                                grid-auto-rows: 200px;
+                            }
                         }
                         aside {
                             flex: 1;
