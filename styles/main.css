@@ -19,4 +19,28 @@ body aside nav ul {
 }
 body .dashboard {
   flex: 85;
+}
+body .dashboard header {
+  padding: 20px;
+}
+body .dashboard header .upper-header {
+  display: flex;
+  gap: 30px;
+}
+body .dashboard header .upper-header .search-container {
+  flex: 6;
+}
+body .dashboard header .upper-header .user-info {
+  flex: 4;
+}
+body .dashboard header .lower-header {
+  display: flex;
+  gap: 50%;
+}
+
+img {
+  display: inline;
+  height: 50px;
+  width: 50px;
+  background-color: aqua;
 }/*# sourceMappingURL=main.css.map */
