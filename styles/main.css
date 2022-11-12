@@ -26,7 +26,11 @@ body aside nav ul li {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+body aside nav ul li span {
+  cursor: pointer;
+}
 body aside nav span.brand {
+  cursor: pointer;
   font-size: x-large;
   display: block;
 }
@@ -53,6 +57,7 @@ body .dashboard header img.profile {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  cursor: pointer;
 }
 body .dashboard header .upper-header {
   display: flex;
@@ -78,6 +83,9 @@ body .dashboard header .upper-header .user-info {
   gap: 10px;
   margin-right: 20px;
 }
+body .dashboard header .upper-header .user-info img[src="assets/bell.svg"] {
+  cursor: pointer;
+}
 body .dashboard header .lower-header {
   display: flex;
   justify-content: space-between;
@@ -93,6 +101,7 @@ body .dashboard header .lower-header .user-container img.profile {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  cursor: pointer;
 }
 body .dashboard header .lower-header .user-container span.bigger {
   font-size: 18px;
@@ -109,6 +118,7 @@ body .dashboard header .lower-header .btn-group button {
   border-radius: 20px;
   padding: 8px;
   font-weight: bold;
+  cursor: pointer;
 }
 body .dashboard .main-content {
   display: flex;
@@ -143,6 +153,7 @@ body .dashboard .main-content main .grid-container .grid-item {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
 }
 body .dashboard .main-content main .grid-container .grid-item .card-text {
   display: block;
@@ -154,6 +165,12 @@ body .dashboard .main-content main .grid-container .grid-item .card-text {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.5s;
+}
+body .dashboard .main-content main .grid-container .grid-item .card-text:hover {
+  background-color: rgba(243, 243, 243, 0.8);
+  color: #0D1321;
+  transition: 0.5s;
 }
 body .dashboard .main-content main .grid-container .grid-item:nth-child(1) {
   background-image: url(../assets/calc.png);
